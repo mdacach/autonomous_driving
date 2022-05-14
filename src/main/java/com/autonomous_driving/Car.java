@@ -10,7 +10,7 @@ import java.util.function.Consumer;
  * \n
  * The car will interact with the semaphores defined on Globals. \n
  */
-class Car extends Thread {
+public class Car extends Thread {
     ImageView imageView;
     Position position;
     long wait;
@@ -42,27 +42,34 @@ class Car extends Thread {
     /**
      * Drives the car through pre-defined points on the interface.
      */
-    public void driveTo(Position pos, String dir) {
+    public void driveTo(Position pos, DriverHelper.Direction dir) {
         while (!Helper.same(this.position(), pos)) {
             Helper.waitTime(this.wait);
-            if (dir.equals("right"))
-                this.driveRight();
-            else if (dir.equals("left"))
-                this.driveLeft();
-            else if (dir.equals("down"))
-                this.driveDown();
-            else if (dir.equals("up"))
-                this.driveUp();
-            else  // this should never happen if I'm smart
-                System.out.println("direction does not exist!");
+            switch (dir) {
+                case LEFT:
+                    this.driveLeft();
+                    break;
+                case RIGHT:
+                    this.driveRight();
+                    break;
+                case UP:
+                    this.driveUp();
+                    break;
+                case DOWN:
+                    this.driveDown();
+                    break;
 
-            //System.out.println(car.position());
+                default:
+                    // Should probably raise an exception here, but relax
+                    // It's already working
+            }
+
             Helper.updateImageView(this.imageView, this.position());
         }
     }
 
     // Wrapper to call position from id
-    public void driveTo(int posID, String dir) {
+    public void driveTo(int posID, DriverHelper.Direction dir) {
         Position pos = Globals.positions[posID];
         driveTo(pos, dir);
     }

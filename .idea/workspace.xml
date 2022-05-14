@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Remove &quot;example&quot; from package name">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java" afterDir="false" />
+    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Clean up some code from Car">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BlackCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BlueCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BrownCar.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/GrayCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/GreenCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/PinkCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/RedCar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/YellowCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/YellowCar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +47,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,7 +56,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.autonomous_driving.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.autonomous_driving.Principal" />
       <module name="autonomous_driving" />
       <extension name="coverage">
@@ -78,7 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.com.autonomous_driving.Principal" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652469106649</updated>
       <workItem from="1652469107990" duration="2000" />
-      <workItem from="1652479938898" duration="3210000" />
+      <workItem from="1652479938898" duration="4801000" />
     </task>
     <task id="LOCAL-00001" summary="Remove &quot;example&quot; from package name">
       <created>1652480044387</created>
@@ -100,7 +93,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652480044387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor car to receive drive function&#10;&#10;Now a car instance receives its route. This allows us to get rid of the specific instances of &quot;colored cars&quot; (e.g YellowCar) and use the base Car for all cars.">
+      <created>1652486571431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652486571431</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactor car to receive drive function&#10;&#10;Now a car instance receives its route. This allows us to get rid of the specific instances of &quot;colored cars&quot; (e.g YellowCar) and use the base Car for all cars.">
+      <created>1652486648196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652486648196</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Clean up some code from Car">
+      <created>1652487186303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652487186303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,15 +132,21 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Remove &quot;example&quot; from package name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove &quot;example&quot; from package name" />
+    <MESSAGE value="Refactor car to receive drive function&#10;&#10;Now a car instance receives its route. This allows us to get rid of the specific instances of &quot;colored cars&quot; (e.g YellowCar) and use the base Car for all cars." />
+    <MESSAGE value="Clean up some code from Car" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean up some code from Car" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java</url>
-          <line>231</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverHelper.java</url>
+          <line>232</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
