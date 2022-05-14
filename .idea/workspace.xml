@@ -4,18 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="">
+    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Remove &quot;example&quot; from package name">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/autonomous_driving/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/autonomous_driving/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BlackCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BlueCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/BrownCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/GrayCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/GreenCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/PinkCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/RedCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/YellowCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/YellowCar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="297fa9QbuPGopULCQTFUEDcMNUl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,9 +55,33 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.autonomous_driving.Principal" />
+      <module name="autonomous_driving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.autonomous_driving.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Principal" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,8 +91,20 @@
       <option name="presentableId" value="Default" />
       <updated>1652469106649</updated>
       <workItem from="1652469107990" duration="2000" />
+      <workItem from="1652479938898" duration="3210000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove &quot;example&quot; from package name">
+      <created>1652480044387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652480044387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -52,5 +116,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove &quot;example&quot; from package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove &quot;example&quot; from package name" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
