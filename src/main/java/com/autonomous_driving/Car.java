@@ -46,22 +46,14 @@ public class Car extends Thread {
         while (!Helper.same(this.position(), pos)) {
             Helper.waitTime(this.wait);
             switch (dir) {
-                case LEFT:
-                    this.driveLeft();
-                    break;
-                case RIGHT:
-                    this.driveRight();
-                    break;
-                case UP:
-                    this.driveUp();
-                    break;
-                case DOWN:
-                    this.driveDown();
-                    break;
-
-                default:
-                    // Should probably raise an exception here, but relax
-                    // It's already working
+                case LEFT -> this.driveLeft();
+                case RIGHT -> this.driveRight();
+                case UP -> this.driveUp();
+                case DOWN -> this.driveDown();
+                default -> {
+                }
+                // Should probably raise an exception here, but relax
+                // It's already working
             }
 
             Helper.updateImageView(this.imageView, this.position());
