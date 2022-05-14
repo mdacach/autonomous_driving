@@ -17,24 +17,38 @@ Although it uses Maven, I am not sure how easy it is to run the project, so here
 Squares represent cars, and each route is the road's part with its respective primary color.
 There are clockwise and counter-clockwise routes.
 
-All cars at slow speed:
+<details> 
+  <summary> All cars at slow speed </summary>
 
-https://user-images.githubusercontent.com/43617028/168439757-6b901bb7-c5e7-41ca-93d3-f83a5c5629bb.mp4
+  https://user-images.githubusercontent.com/43617028/168439757-6b901bb7-c5e7-41ca-93d3-f83a5c5629bb.mp4
+</details> 
 
-All cars at full speed:
+<details> 
+  <summary> All cars at full speed </summary>
 
-https://user-images.githubusercontent.com/43617028/168439766-fcf32c42-e1d2-4ed4-ba0b-aca137d7a912.mp4
+  https://user-images.githubusercontent.com/43617028/168439766-fcf32c42-e1d2-4ed4-ba0b-aca137d7a912.mp4
+</details> 
 
-Some fast, some slow:
+<details> 
+  <summary> Some fast, some slow </summary>
 
-https://user-images.githubusercontent.com/43617028/168439771-8ef98e08-fb8b-4714-853c-a287af667572.mp4
+  https://user-images.githubusercontent.com/43617028/168439771-8ef98e08-fb8b-4714-853c-a287af667572.mp4
+</details> 
+
 
 #### Note:
 When I try to change the speeds during the video, it gets laggy, so I've done separate videos instead of a big one.
 
 ### Development:
-All semaphores used and area of effect
-![semaphores](https://user-images.githubusercontent.com/43617028/168439970-f98d6aed-47ff-45d2-8d5a-b691e84ec96c.jpeg)
+<details>
+  <summary> All semaphores used and area of effect </summary>
 
-All pixel points used for car's routes
+![semaphores](https://user-images.githubusercontent.com/43617028/168439970-f98d6aed-47ff-45d2-8d5a-b691e84ec96c.jpeg)
+</details>
+
+
+<details>
+  <summary> All pixel points used for routes </summary>
+  
 ![all_points](https://user-images.githubusercontent.com/43617028/168439975-4283056a-39da-4e5f-ac9f-a6b26302c2df.png)
+</details>
