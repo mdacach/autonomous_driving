@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Clean up some code from Car">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Refactor code from tab2 to tab4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/DriverHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Makefile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652469106649</updated>
       <workItem from="1652469107990" duration="2000" />
-      <workItem from="1652479938898" duration="4801000" />
+      <workItem from="1652479938898" duration="5030000" />
     </task>
     <task id="LOCAL-00001" summary="Remove &quot;example&quot; from package name">
       <created>1652480044387</created>
@@ -114,7 +112,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652487186303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change direction from String to Enum&#10;&#10;With Enums, we have less room for error and possibilities are clearer.">
+      <created>1652487913643</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652487913643</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modernize switch expression with lambdas">
+      <created>1652488075712</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652488075712</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactor code from tab2 to tab4">
+      <created>1652488116230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652488116230</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +155,10 @@
     <MESSAGE value="Remove &quot;example&quot; from package name" />
     <MESSAGE value="Refactor car to receive drive function&#10;&#10;Now a car instance receives its route. This allows us to get rid of the specific instances of &quot;colored cars&quot; (e.g YellowCar) and use the base Car for all cars." />
     <MESSAGE value="Clean up some code from Car" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up some code from Car" />
+    <MESSAGE value="Change direction from String to Enum&#10;&#10;With Enums, we have less room for error and possibilities are clearer." />
+    <MESSAGE value="Modernize switch expression with lambdas" />
+    <MESSAGE value="Refactor code from tab2 to tab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code from tab2 to tab4" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
