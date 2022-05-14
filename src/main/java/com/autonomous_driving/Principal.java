@@ -55,18 +55,16 @@ public class Principal extends Application {
         String css = cssURL.toString();
         scene.getStylesheets().add(css);
 
-
         // initialize all cars
         var g = new Gallery();
-        var x = g.blackCarImage;
-        BlackCar black = new BlackCar(g.blackCarImage, Globals.positions[41].copy(), 10);
-        BlueCar blue = new BlueCar(g.blueCarImage, Globals.positions[53].copy(), 5);
-        BrownCar brown = new BrownCar(g.brownCarImage, Globals.positions[26].copy(), 7);
-        GrayCar gray = new GrayCar(g.grayCarImage, Globals.positions[1].copy(), 3);
-        GreenCar green = new GreenCar(g.greenCarImage, Globals.positions[59].copy(), 10);
-        PinkCar pink = new PinkCar(g.pinkCarImage, Globals.positions[28].copy(), 5);
-        RedCar red = new RedCar(g.redCarImage, Globals.positions[46].copy(), 10);
-        YellowCar yellow = new YellowCar(g.yellowCarImage, Globals.positions[57].copy(), 5);
+        var black = new Car(g.blackCarImage, Globals.positions[41].copy(), 10, DriverFunctions::black);
+        var blue = new Car(g.blueCarImage, Globals.positions[53].copy(), 5, DriverFunctions::blue);
+        var brown = new Car(g.brownCarImage, Globals.positions[26].copy(), 7, DriverFunctions::brown);
+        var gray = new Car(g.grayCarImage, Globals.positions[1].copy(), 3, DriverFunctions::gray);
+        var green = new Car(g.greenCarImage, Globals.positions[59].copy(), 10, DriverFunctions::green);
+        var pink = new Car(g.pinkCarImage, Globals.positions[28].copy(), 5, DriverFunctions::pink);
+        var red = new Car(g.redCarImage, Globals.positions[46].copy(), 10, DriverFunctions::red);
+        var yellow = new Car(g.yellowCarImage, Globals.positions[57].copy(), 5, DriverFunctions::yellow);
 
 
         // initialize all sliders and icons
