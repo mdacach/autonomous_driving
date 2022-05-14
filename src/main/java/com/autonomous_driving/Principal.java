@@ -19,10 +19,9 @@ import javafx.stage.Stage;
 
 
 /**
- * Initializes objects for main frame.
- * <p>
- * Each car is a thread and a separate class based on Car.java
- * We need different paths for each car, which are implemented on the car itself.
+ * Initializes objects for main frame. \n
+ * \n
+ * Each car is a separate thread. \n
  */
 public class Principal extends Application {
     @Override
@@ -36,7 +35,7 @@ public class Principal extends Application {
         Scene scene = new Scene(Globals.root, Globals.WIDTH, Globals.HEIGHT);
         stage.setScene(scene);
 
-        // javafx non resizable does not work on bspwm
+        // JavaFX non-resizable does not work on bspwm window manager
         stage.setWidth(Globals.WIDTH);
         stage.setHeight(Globals.HEIGHT);
         stage.setMaxWidth(Globals.WIDTH);
@@ -44,18 +43,14 @@ public class Principal extends Application {
         stage.setMinWidth(Globals.WIDTH);
         stage.setMinHeight(Globals.HEIGHT);
 
-        //set background through css
+        // Set background through css (there's probably a better way)
         Globals.root.setId("background");
-        var cssURL = this.getClass().getResource("Styles.css");
-        if (cssURL == null) {
-            System.out.println("Could not find CSS file");
-            System.exit(1);
-        }
-        String css = cssURL.toString();
-        scene.getStylesheets().add(css);
+        var cssAsString = this.getClass().getResource("Styles.css").toExternalForm();
+        scene.getStylesheets().add(cssAsString);
 
-        // initialize all cars
-        var g = new Gallery();
+        var g = new Gallery(); // As getResource depends on `this`, we need Gallery to be instantiated.
+
+        // Ideally we would have better naming for those starting positions (Avoid magic numbers)
         var black = new Car(g.blackCarImage, Globals.positions[41].copy(), 10, DriverHelper::black);
         var blue = new Car(g.blueCarImage, Globals.positions[53].copy(), 5, DriverHelper::blue);
         var brown = new Car(g.brownCarImage, Globals.positions[26].copy(), 7, DriverHelper::brown);

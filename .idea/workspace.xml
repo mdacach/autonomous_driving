@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Refactor code from tab2 to tab4">
+    <list default="true" id="1e5f294b-fdc7-407a-a823-8d18c410c019" name="Changes" comment="Delete unused Makefile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Gallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/autonomous_driving/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652469106649</updated>
       <workItem from="1652469107990" duration="2000" />
-      <workItem from="1652479938898" duration="5030000" />
+      <workItem from="1652479938898" duration="5508000" />
     </task>
     <task id="LOCAL-00001" summary="Remove &quot;example&quot; from package name">
       <created>1652480044387</created>
@@ -133,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652488116230</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modernize lambdas to expressions">
+      <created>1652488138975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652488138975</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Delete unused Makefile">
+      <created>1652488147597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652488147597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +174,9 @@
     <MESSAGE value="Change direction from String to Enum&#10;&#10;With Enums, we have less room for error and possibilities are clearer." />
     <MESSAGE value="Modernize switch expression with lambdas" />
     <MESSAGE value="Refactor code from tab2 to tab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor code from tab2 to tab4" />
+    <MESSAGE value="Modernize lambdas to expressions" />
+    <MESSAGE value="Delete unused Makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused Makefile" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -5,10 +5,10 @@ import javafx.scene.layout.Pane;
 import java.util.concurrent.Semaphore;
 
 /**
- * Class to handle global variables.
+ * Class to handle global state.
  * <p>
  * Semaphores and positions are global, as we need to access
- * them on various other classes.
+ * them on multiple other classes. This isn't good, but I am no GUI specialist, so...
  */
 public class Globals {
     static final int WIDTH = 1160;
@@ -165,6 +165,5 @@ public class Globals {
 
         // missing one tiny spot for blue
         positions[99] = new Position(278, 222);
-
     }
 }

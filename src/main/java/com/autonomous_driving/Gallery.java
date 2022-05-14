@@ -2,16 +2,14 @@ package com.autonomous_driving;
 
 import javafx.scene.image.Image;
 
-/**
- * Class to load images from folder.
- */
 public class Gallery {
     private String pathToString(String path) {
-        var a = this.getClass();
-        var b = a.getResource(path);
-        return b.toExternalForm();
+        var c = this.getClass();
+        var url = c.getResource(path);
+        return url.toExternalForm();
     }
 
+    // Paths on IntelliJ were different from what I was using before, so I've created this helper.
     private Image createImage(String path) {
         return new Image(pathToString(path));
     }
