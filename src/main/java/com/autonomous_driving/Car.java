@@ -6,26 +6,15 @@ import javafx.scene.image.ImageView;
 import java.util.function.Consumer;
 
 /**
- * Abstract class to represent a Car.
- * <p>
- * The car has various helper functions, including waiting
- * for concurrency solutions.
- * Each specific car *must* implement a "drive" function
- * with its path.
+ * Represents a car on the grid.
+ * \n
+ * The car will interact with the semaphores defined on Globals. \n
  */
 class Car extends Thread {
     ImageView imageView;
-    Image image;
     Position position;
     long wait;
     Consumer<Car> driveFunction;
-
-    // default car constructor
-    public Car(Image image, Position position, long wait) {
-        this.position = position;
-        this.imageView = new ImageView(image);
-        this.wait = wait;
-    }
 
     public Car(Image image, Position position, long wait, Consumer<Car> driveFunction) {
         this.position = position;
@@ -35,7 +24,6 @@ class Car extends Thread {
     }
 
     public void waitForSemaphore(int id) {
-        //System.out.println(this.getClass() + " waiting for semaphore " + id);
         try {
             Globals.semaphores[id].acquire();
         } catch (Exception e) {
@@ -43,14 +31,11 @@ class Car extends Thread {
     }
 
     public void releaseSemaphore(int id) {
-        //System.out.println("releasing " + id);
         Globals.semaphores[id].release();
     }
 
-    // so that increasing the slider increases the speed,
-    // but still we have smooth animations
+    // Smooth function for slider speed increase
     public void changeSpeed(double sliderValue) {
-        //this.wait = (int) (100 / sliderValue);
         this.wait = (int) (10 - sliderValue);
     }
 
@@ -76,13 +61,28 @@ class Car extends Thread {
         }
     }
 
-    // wrapper so we can call with a defined position more easily
+    // Wrapper to call position from id
     public void driveTo(int posID, String dir) {
         Position pos = Globals.positions[posID];
         driveTo(pos, dir);
     }
 
-    // drive directions
+    @Override
+    public void run() {
+        Helper.addImageView(imageView, position);
+        while (true) {
+            // I am actually not sure why this wait is needed
+            // Maybe on slower computers?
+            Helper.waitTime(wait);
+            driveFunction.accept(this);
+        }
+    }
+
+    public Position position() {
+        return position;
+    }
+
+    // Helper functions for manipulating underlying Position
     public void driveLeft() {
         this.position.left();
     }
@@ -98,25 +98,4 @@ class Car extends Thread {
     public void driveDown() {
         this.position.down();
     }
-
-    // when we start this thread, it will run forever
-    @Override
-    public void run() {
-        Helper.addImageView(imageView, position);
-        while (true) {
-            Helper.waitTime(wait);
-            driveFunction.accept(this);
-        }
-    }
-
-    // position getter
-    public Position position() {
-        return position;
-    }
-
-    // each car must implement its own drive path
-    public void drive() {
-        System.out.println("Driving default!");
-    }
-
 }
